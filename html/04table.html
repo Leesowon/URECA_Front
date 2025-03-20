@@ -1,0 +1,72 @@
+<!-- 04table.html (표) -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <table border="1"> <!-- <table : tag, border : 속성, " " : value -->
+        <!-- tag의 구성 : TagName, Attribute, Attribute=Value -->
+        <!-- 속성과 value의 쌍은 여러개가 반복적으로 나올 수 있다. -->
+
+        <tr> <!-- table row : 한 줄 -->
+            <td>1</td> <td>2</td> <td>3</td> <!-- table data : 한 칸 -->
+        </tr>
+        <tr>
+            <td>4</td> <td>5</td> <td>6</td>
+        </tr>
+    </table>
+
+    <hr> <!-- 줄 긋기 -->
+    <hr width="70%" align="left">
+
+    <table border="2">
+        <caption> caption : 테이블의 제목 </caption>
+        <colgroup> <!-- column을 그룹핑 -->
+            <!-- 칸이 3개니까 3개 -->
+            <col style="width:350px;">
+            <col style="width:250px;">
+            <col style="width:150px;">
+        </colgroup>
+        <tr>
+            <td rowspan="2">1</td> <td>2</td> <td>3</td>
+        </tr>
+        <tr>
+            <!-- <td>4</td>  -->
+            <td>5</td> <td>6</td>
+        </tr>
+        <tr>
+            <td colspan="3">7</td> 
+            <!-- <td>8</td> <td>9</td> -->
+        </tr>
+    </table>
+
+    <hr width="70%">
+
+    <table border="1">
+        <!-- head, body, foot 은 코드의 위치 상관 없이 저 순서대로 읽음 -->
+        <thead> <!-- 주제 -->
+            <tr>
+                <th>No</th> <th>이름</th> <th>전화번호</th> <!-- table head -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td> <td>홍길동</td> <td>010-1234-5678</td>
+            </tr>
+            <tr>
+                <td>2</td> <td>강감찬</td> <td>010-9876-5432</td>
+            </tr>
+        </tbody> <!-- 본문 -->
+        <tfoot>
+            <tr>
+                <td colspan="3">문의 : 123@gmail.net</td>
+            </tr>
+        </tfoot> <!-- 마무리 -->
+    </table>
+
+
+ </body>
+ </html>

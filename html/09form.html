@@ -1,0 +1,27 @@
+<!-- 09form.html -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form & Button </title>
+ </head>
+ <body>
+    <form> <!-- form : 서버로 전송할 입력 값의 영역 </form>
+        <input type="text" id="uname" name="uname" value="홍길동" disabled> 이름 <!-- 사용 불가 -->
+        <!-- disabled는 html element 역할을 상실, 서버전송 x : 잘 사용하지 않는다. -->
+        <br><br>
+        
+        <input type="text" id="uemail" name="uemail" value="aaa@bbb.com" readonly> 이메일
+        <br><br>
+        <input type="text" id="utel" name="utel" required> 전화번호
+        <!-- required : 입력을 안하면 다음 서버로 데이터 전송을 안한다. -->
+        <hr width="70%">
+        <textarea cols="50" rows="10"></textarea>
+        <hr>
+        <input type="button" value="button"> <!-- button은 동작을 개발자가 정의해줘야 동작함-->
+        <input type="submit" value="submin"> <!-- 폼 안의 데이터를 서버로 전송-->
+        <input type="reset" value="reset"> <!-- 폼 안의 데이터가 원래 상태로 돌아감 -->
+    </form>
+ </body>
+ </html>
