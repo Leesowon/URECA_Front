@@ -1,0 +1,28 @@
+<!-- 14float.html -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14float</title>
+    <style>
+        h1{ /* 공통 적용 */
+            background: brown; /* block tag */
+            width: 250px;
+            height: 250px;
+        }
+        #no1{
+            background-color: aqua;
+            float: left; /* 공중으로 떠서, 땅에 남은 영역을 no2가 채움 */
+        }
+        #no2{
+            background-color: coral;
+            float: left; /* 같이 떠서 no1 오른쪽으로 가서 붙음 */
+        }
+    </style>
+ </head>
+ <body>
+    <h1 id="no1"></h1>
+    <h1 id="no2"></h1>
+ </body>
+ </html>
